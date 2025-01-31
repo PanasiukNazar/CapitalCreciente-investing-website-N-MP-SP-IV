@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <title>CapitalCreciente</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
+        <!-- Global Stylesheets -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i"
+            rel="stylesheet"
+        />
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/animate/animate.min.css" />
+        <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css" />
+        <link
+            rel="stylesheet"
+            href="css/owl-carousel/owl.theme.default.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body id="page-top">
+        <!--====================================================
+                         HEADER
+======================================================-->
+
+        <header>
+            <!-- Navbar -->
+            <nav
+                class="navbar navbar-expand-lg navbar-light"
+                id="mainNav"
+                data-toggle="affix"
+            >
+                <div class="container">
+                    <a class="navbar-brand smooth-scroll" href="index.html">
+                        <h3 style="margin-bottom: 0px; color: #27ae60">
+                            CapitalCreciente
+                        </h3>
+                    </a>
+                    <button
+                        class="navbar-toggler navbar-toggler-right"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Alternar navegación"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link smooth-scroll"
+                                    href="index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link smooth-scroll"
+                                    href="about.html"
+                                    >Sobre nosotros</a
+                                >
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle smooth-scroll"
+                                    href="#"
+                                    id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Páginas</a
+                                >
+                                <div
+                                    class="dropdown-menu dropdown-cust"
+                                    aria-labelledby="navbarDropdownMenuLink"
+                                >
+                                    <a
+                                        class="dropdown-item"
+                                        target="_empty"
+                                        href="services.html"
+                                        >Servicio de Inversiones</a
+                                    >
+                                    <a
+                                        class="dropdown-item"
+                                        target="_empty"
+                                        href="blog.html"
+                                        >Blog de Inversiones</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link smooth-scroll"
+                                    href="contact.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--====================================================
+                    LOGIN OR REGISTER
+======================================================-->
+        <section id="login">
+            <div
+                class="modal fade"
+                id="login-modal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+                style="display: none"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" align="center">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span
+                                    class="fa fa-times"
+                                    aria-hidden="true"
+                                ></span>
+                            </button>
+                        </div>
+                        <div id="div-forms">
+                            <form id="login-form">
+                                <h3 class="text-center">Login</h3>
+                                <div class="modal-body">
+                                    <label for="username">Username</label>
+                                    <input
+                                        id="login_username"
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Enter username "
+                                        required
+                                    />
+                                    <label for="username">Password</label>
+                                    <input
+                                        id="login_password"
+                                        class="form-control"
+                                        type="password"
+                                        placeholder="Enter password"
+                                        required
+                                    />
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" /> Remember
+                                            me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <div>
+                                        <button
+                                            type="submit"
+                                            class="btn btn-general btn-white"
+                                        >
+                                            Login
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            id="login_register_btn"
+                                            type="button"
+                                            class="btn btn-link"
+                                        >
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form id="register-form" style="display: none">
+                                <h3 class="text-center">Register</h3>
+                                <div class="modal-body">
+                                    <label for="username">Username</label>
+                                    <input
+                                        id="register_username"
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Enter username"
+                                        required
+                                    />
+                                    <label for="register_email">E-mailId</label>
+                                    <input
+                                        id="register_email"
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Enter eMail"
+                                        required
+                                    />
+                                    <label for="register_password"
+                                        >Password</label
+                                    >
+                                    <input
+                                        id="register_password"
+                                        class="form-control"
+                                        type="password"
+                                        placeholder="Password"
+                                        required
+                                    />
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button
+                                            type="submit"
+                                            class="btn btn-general btn-white"
+                                        >
+                                            Register
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            id="register_login_btn"
+                                            type="button"
+                                            class="btn btn-link"
+                                        >
+                                            Log In
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====================================================
+                       HOME-P
+======================================================-->
+        <div id="home-p" class="home-p pages-head4 text-center">
+            <div class="container">
+                <h1 class="wow fadeInUp" data-wow-delay="0.1s">Kontakt</h1>
+            </div>
+            <!--/end container-->
+        </div>
+
+        <!--====================================================
+                        CONTACT-P1  
+======================================================-->
+        <section
+            id="contact-p1"
+            class="contact-p1"
+            style="margin-top: 50px; margin-bottom: 50px"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="contact-p1-cont">
+                            <h3>Kontaktieren Sie uns</h3>
+                            <div class="heading-border-light"></div>
+                            <p>
+                                Haben Sie Fragen oder möchten Sie mehr über
+                                unsere Dienstleistungen erfahren? Zögern Sie
+                                nicht, uns zu kontaktieren! Unser Team steht
+                                Ihnen gerne zur Verfügung, um Ihre Anfragen zu
+                                beantworten und Ihnen weiterzuhelfen. Nutzen Sie
+                                einfach eine der untenstehenden
+                                Kontaktmöglichkeiten, um mit uns in Verbindung
+                                zu treten. Wir freuen uns darauf, von Ihnen zu
+                                hören und Ihnen bei Ihren Videoprojekten
+                                behilflich zu sein.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-p1-cont2">
+                            <address
+                                class="address-details-f"
+                                style="color: #000"
+                            >
+                                C. de Villanueva, 29, Salamanca, 28001 Madrid,
+                                España <br />
+                                Telefon: +34919991009 <br />
+                                E-Mail:
+                                <a
+                                    style="color: #000"
+                                    href="mailto:laut_basel@gmail.com"
+                                    class=""
+                                    >capital_creciente@gmail.com</a
+                                >
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====================================================
+                        CONTACT-P2 
+======================================================-->
+        <section class="contact-p2" id="contact-p2">
+            <div class="container">
+                <div class="row con-form">
+                    <div class="col-md-4">
+                        <input
+                            type="text"
+                            name="full-name"
+                            placeholder="Vollständiger Name"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="E-Mail-Adresse"
+                            class="form-control"
+                            required
+                            id="email"
+                        />
+                        <div id="result" style="color: red"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Betreff"
+                            class="form-control"
+                        />
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Ihre Nachricht"
+                            class="form-control"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="col-md-12 sub-but mt-4 mb-4">
+                        <button
+                            type="submit"
+                            class="btn btn-general btn-white"
+                            role="button"
+                            id="submit"
+                            onclick="sendForm()"
+                        >
+                            Senden
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====================================================
+                       MAP
+======================================================-->
+        <section id="contact-add">
+            <div id="map">
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12149.554406623132!2d-3.7025079175651716!3d40.422393299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228983ea68edb%3A0x894b2ccc445e3e77!2sAsset%20Management%20Spain%20Gestmadrid!5e0!3m2!1suk!2sua!4v1738323668552!5m2!1suk!2sua"
+                        width="100%"
+                        height="450"
+                        frameborder="0"
+                        style="border: 0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--====================================================
+                      FOOTER
+======================================================-->
+        <footer>
+            <div id="footer-s1" class="footer-s1">
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Acerca de nosotros -->
+                            <div class="col-md-4 col-sm-6">
+                                <h3 style="margin-bottom: 0px; color: #27ae60">
+                                    CapitalCreciente
+                                </h3>
+                                <ul class="list-unstyled comp-desc-f">
+                                    <li>
+                                        <p>
+                                            ¡Bienvenido a nuestro sitio de
+                                            inversiones! Somos su socio para
+                                            soluciones de inversión
+                                            profesionales y creativas. Nuestro
+                                            equipo experimentado transforma sus
+                                            ideas en oportunidades de inversión
+                                            que maximizan el retorno y minimizan
+                                            los riesgos.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <br />
+                            </div>
+                            <!-- Fin Acerca de nosotros -->
+
+                            <!-- Enlaces útiles -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="heading-footer">
+                                    <h2>Enlaces útiles</h2>
+                                </div>
+                                <ul class="list-unstyled link-list">
+                                    <li>
+                                        <a href="about.html"
+                                            >Acerca de nosotros</a
+                                        ><i class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contacto</a
+                                        ><i class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html"
+                                            >Política de privacidad</a
+                                        ><i class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="terms-of-use.html"
+                                            >Términos de uso</a
+                                        ><i class="fa fa-angle-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Fin Enlaces útiles -->
+
+                            <!-- Contacto -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="heading-footer">
+                                    <h2>Contacto</h2>
+                                </div>
+                                <address class="address-details-f">
+                                    C. de Villanueva, 29, Salamanca, 28001
+                                    Madrid, España <br />
+                                    Teléfono: +34919991009 <br />
+                                    Correo electrónico:
+                                    <a
+                                        href="mailto:laut_basel@gmail.com"
+                                        class=""
+                                        >capital_creciente@gmail.com</a
+                                    >
+                                </address>
+                            </div>
+                            <!-- Fin Contacto -->
+                        </div>
+                    </div>
+                    <!--/container -->
+                </div>
+            </div>
+
+            <a
+                href="#home"
+                id="back-to-top"
+                class="btn btn-sm btn-green btn-back-to-top smooth-scrolls hidden-sm hidden-xs"
+                title="home"
+                role="button"
+            >
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </footer>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Consentimiento de cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Este sitio web utiliza cookies para ofrecerle una
+                    experiencia de navegación mejorada y más relevante.
+                    <a href="privacy-policy.html">Más información...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Aceptar</button>
+                <button class="cookie-button" id="declineBtn">Rechazar</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!--Global JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/popper/popper.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/wow/wow.min.js"></script>
+        <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery-easing/jquery.easing.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
